@@ -23,8 +23,8 @@ jobs:
           - name: Configure AWS Credentials
             uses: aws-actions/configure-aws-credentials@v4
             with:
-              role-to-assume: arn:aws:iam::284983278621:role/devops_etcd_adapter_cd
-              role-session-name: devops_etcd_adapter_cd
+              role-to-assume: arn:aws:iam::284983278621:role/devops_etcd_adapter_cd_github_oidc_role
+              role-session-name: devops_etcd_adapter_cd_github_oidc_role
               aws-region: eu-central-1
               
           - name: Login to Amazon ECR
